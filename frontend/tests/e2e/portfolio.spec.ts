@@ -3,9 +3,9 @@ import { expect, test } from '@playwright/test';
 test('visitor can browse a featured project', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /I build ML systems/i })).toBeVisible();
-  await page.getByRole('link', { name: /Open From-Scratch Learning Lab/i }).click();
-  await expect(page).toHaveURL(/\/projects\/from-scratch-learning-lab$/);
-  await expect(page.getByRole('heading', { name: /From-Scratch Learning Lab/i })).toBeVisible();
+  await page.getByRole('link', { name: /Open Neural Network \(MLP\) From Scratch/i }).click();
+  await expect(page).toHaveURL(/\/projects\/neural-network-from-scratch$/);
+  await expect(page.getByRole('heading', { name: /Neural Network \(MLP\) From Scratch/i })).toBeVisible();
 });
 
 test('visitor can submit the contact form through the API', async ({ page }) => {

@@ -56,4 +56,4 @@ The dependency set is intentionally small: React + Vite + TypeScript, React Rout
 
 ## Known content assumptions
 
-The repository started empty. The content model therefore uses explicit `EDITABLE PROFILE` markers, no fabricated employment or education history, and no unverifiable metrics. Replace those values in `frontend/src/features/portfolio/content.ts` and `backend/app/services/content.py` when the real profile data is available.
+The repository started empty. The initial content model used editable markers; the supplied résumé now populates `content/profile.json` and the three verified project summaries in `content/projects.json`. External project URLs and additional benchmark details remain absent where the résumé did not provide them.

@@ -10,11 +10,11 @@ export function ProjectVisual({ project, compact = false }: ProjectVisualProps) 
   const isRegression = project.slug !== 'neural-network-from-scratch';
 
   return (
-    <div className={`project-visual project-visual--${isRegression ? 'cyclone' : 'lab'} ${compact ? 'project-visual--compact' : ''}`} aria-label={`${project.title} abstract visual`} role="img">
+    <div className={`project-visual project-visual--${isRegression ? 'regression' : 'lab'} ${compact ? 'project-visual--compact' : ''}`} aria-label={`${project.title} abstract visual`} role="img">
       <div className="project-visual__topline"><span>{isRegression ? 'OPT / TRACE-04' : 'LAB / TRACE-01'}</span><span>{compact ? '01:1' : '01:2'}</span></div>
       {isRegression ? (
         <>
-          <div className="cyclone-map" aria-hidden="true"><span /><span /><span /><span /><span /><span /><span /><span /><span /></div>
+          <div className="regression-map" aria-hidden="true"><span /><span /><span /><span /><span /><span /><span /><span /><span /></div>
           <Waves className="project-visual__glyph" aria-hidden="true" size={compact ? 28 : 48} strokeWidth={1.1} />
           <div className="project-visual__coordinate">LOSS / WEIGHTS / 04</div>
         </>
