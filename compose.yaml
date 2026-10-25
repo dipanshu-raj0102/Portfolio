@@ -1,0 +1,48 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: portfolio
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: portfolio-dev-only
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U portfolio -d portfolio"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      APP_ENV: development
+      DATABASE_URL: postgresql+asyncpg://portfolio:portfolio-dev-only@db:5432/portfolio
+      CORS_ORIGINS: ${COMPOSE_FRONTEND_ORIGIN:-http://localhost:5173}
+      AUTO_CREATE_TABLES: "false"
+      MIGRATION_RETRIES: "30"
+      MIGRATION_RETRY_SECONDS: "2"
+    ports:
+      - "${COMPOSE_API_HOST_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: on-failure:5
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_URL: ${COMPOSE_API_URL:-http://localhost:8000}
+    ports:
+      - "${COMPOSE_FRONTEND_HOST_PORT:-5173}:80"
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:

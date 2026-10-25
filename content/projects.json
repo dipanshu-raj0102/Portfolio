@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "neural-network-from-scratch",
+    "title": "Neural Network (MLP) From Scratch",
+    "kicker": "MODEL MECHANICS / NUMPY",
+    "summary": "A fully connected multi-layer perceptron implemented with NumPy, including forward propagation, backpropagation, ReLU, Softmax, cross-entropy, and mini-batch gradient descent.",
+    "problem": "Building a neural network without a deep-learning framework makes the learning loop impossible to hide. The project focuses on understanding how activations, gradients, loss, and parameter updates work together in a complete classifier.",
+    "approach": "The implementation keeps the training path explicit: vectorized forward passes, backpropagation through ReLU layers, Softmax probabilities, cross-entropy loss, and mini-batch updates. It was trained for 26-class handwritten letter recognition.",
+    "architecture": ["Fully connected MLP", "ReLU hidden layers", "Softmax output", "Mini-batch gradient descent"],
+    "stack": ["Python", "NumPy", "Machine Learning"],
+    "period": "2026 — Sep 2026",
+    "status": "completed",
+    "statusTone": "violet",
+    "metric": "26 classes",
+    "metricLabel": "Recognition scope",
+    "limitations": "The résumé records the recognition scope but does not provide a final accuracy, dataset name, or split protocol; those details should be added when verified.",
+    "links": []
+  },
+  {
+    "slug": "logistic-regression-from-scratch",
+    "title": "Logistic Regression from Scratch",
+    "kicker": "CLASSIFICATION / NUMPY",
+    "summary": "Binary and multiclass logistic regression built from first principles with Softmax and cross-entropy, reaching 95.13% test accuracy.",
+    "problem": "A compact classifier is useful only when the optimization and evaluation path are understandable. This project turns logistic regression into an inspectable implementation instead of a black-box estimator.",
+    "approach": "The project implements binary and multiclass classification with vectorized NumPy operations, Softmax probabilities, cross-entropy loss, and gradient-based training. The reported result is a 95.13% test accuracy.",
+    "architecture": ["Binary and multiclass modes", "Softmax probabilities", "Cross-entropy loss", "Vectorized NumPy training"],
+    "stack": ["Python", "NumPy", "Machine Learning"],
+    "period": "Independent project",
+    "status": "completed",
+    "statusTone": "lime",
+    "metric": "95.13%",
+    "metricLabel": "Test accuracy",
+    "limitations": "The résumé provides the test accuracy but not the dataset, class balance, split strategy, or baseline comparison; add those details before presenting this as a reproducible benchmark.",
+    "links": []
+  },
+  {
+    "slug": "linear-regression-from-scratch",
+    "title": "Linear Regression from Scratch",
+    "kicker": "OPTIMIZATION / NUMPY",
+    "summary": "A vectorized linear-regression implementation covering gradient descent, mean-squared-error cost, training, and performance visualization.",
+    "problem": "Linear regression is simple enough to expose every part of an optimization loop: the cost surface, parameter updates, convergence behavior, and the relationship between predictions and error.",
+    "approach": "The project implements gradient descent around a mean-squared-error objective, keeps training vectorized, and adds performance visualizations to make convergence and fit quality easier to inspect.",
+    "architecture": ["MSE cost function", "Gradient descent", "Vectorized training", "Performance visualizations"],
+    "stack": ["Python", "NumPy", "Data Visualization"],
+    "period": "Independent project",
+    "status": "completed",
+    "statusTone": "violet",
+    "metric": "From first principles",
+    "metricLabel": "Implementation focus",
+    "limitations": "No quantitative benchmark was included in the résumé; add a verified dataset, error metric, and comparison baseline if this case study is expanded.",
+    "links": []
+  }
+]

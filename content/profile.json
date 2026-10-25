@@ -1,0 +1,52 @@
+{
+  "name": "Dipanshu Raj",
+  "shortName": "Dipanshu",
+  "title": "Machine Learning Engineer",
+  "location": "Patna, Bihar",
+  "email": "dipanshuraj0102@gmail.com",
+  "phone": "+91 7765952057",
+  "summary": "B.Tech Computer Science student at Birla Institute of Technology, Mesra, with strong foundations in Python, C, data structures, Linux, and Git. Focused on machine learning and computer vision, with hands-on experience implementing ML algorithms from scratch using NumPy.",
+  "heroStatement": "I build machine learning systems from first principles — and make the reasoning visible.",
+  "links": {
+    "github": "https://github.com/dipanshu-raj0102",
+    "linkedin": "https://www.linkedin.com/in/dipanshu-raj0102"
+  },
+  "education": [
+    {
+      "institution": "Birla Institute of Technology, Mesra",
+      "credential": "B.Tech in Computer Science",
+      "period": "2024 — 2028"
+    },
+    {
+      "institution": "Loyola High School",
+      "credential": "Intermediate (PCM)",
+      "period": "2023"
+    },
+    {
+      "institution": "Loyola High School",
+      "credential": "Matriculation",
+      "period": "2021"
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Machine learning",
+      "items": ["Machine Learning", "NumPy", "TensorFlow", "Data Visualization"]
+    },
+    {
+      "title": "Foundations",
+      "items": ["Python", "C", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Systems & tooling",
+      "items": ["Linux", "Git"]
+    }
+  ],
+  "certifications": [
+    "Machine Learning",
+    "Mathematics for Machine Learning & Data Science",
+    "CS50P: Introduction to Programming with Python",
+    "CS50x: Introduction to Computer Science"
+  ],
+  "languages": ["Hindi", "English"]
+}

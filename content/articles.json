@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "making-model-tradeoffs-visible",
+    "title": "Making model trade-offs visible",
+    "excerpt": "A working outline for explaining accuracy, latency, interpretability, and operational risk without hiding behind a single score.",
+    "date": "Editable date",
+    "readingTime": "6 min read",
+    "status": "draft outline",
+    "tags": ["ML systems", "evaluation", "writing"]
+  },
+  {
+    "slug": "from-notebook-to-reliable-service",
+    "title": "From notebook to reliable service",
+    "excerpt": "Notes on the seams that matter when an experiment becomes an API: validation, observability, failure modes, and reproducibility.",
+    "date": "Editable date",
+    "readingTime": "8 min read",
+    "status": "planned",
+    "tags": ["backend", "MLOps", "engineering"]
+  }
+]
